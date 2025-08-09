@@ -6,10 +6,8 @@ import polars as pl
 def load_data():
     """Load and preprocess the data"""
     try:
-        # url = "https://raw.githubusercontent.com/KrishMehta2004/TrackHigh_Data/refs/heads/main/Data.csv"
-        # df = pl.read_csv(url)
-
-        df = pl.read_csv("demo.csv")
+        url = "https://raw.githubusercontent.com/KrishMehta2004/TrackHigh_Data/refs/heads/main/Data.csv"
+        df = pl.read_csv(url)
 
         df = df.with_columns([
             # Convert date column

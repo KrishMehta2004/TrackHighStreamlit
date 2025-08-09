@@ -74,22 +74,21 @@ def render_search_stock_view(data, search_symbol):
         high_dates = data
         if not data.height == 0:
             # Key metrics in a clean layout
-            highest_price = data['ltp'].max()
-           
-            metrics_container = st.container()
-            with metrics_container:
-                col1, col2, col3 = st.columns(3)
-                with col1:
-                    st.metric(
-                        "52-Week High",
-                        format_number(highest_price),
-                        delta=None
-                    )
-                with col3:
-                    st.metric(
-                        "High Points Found",
-                        f"{len(high_dates)} dates" if not high_dates.is_empty() else "0"
-                    )
+            # highest_price = data['ltp'].max()
+            # metrics_container = st.container()
+            # with metrics_container:
+            #     col1, col2, col3 = st.columns(3)
+            #     with col1:
+            #         st.metric(
+            #             "52-Week High",
+            #             format_number(highest_price),
+            #             delta=None
+            #         )
+            #     with col3:
+            #         st.metric(
+            #             "High Points Found",
+            #             f"{len(high_dates)} dates" if not high_dates.is_empty() else "0"
+            #         )
                     
             # High points table with enhanced styling
             if not high_dates.is_empty():

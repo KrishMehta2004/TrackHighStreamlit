@@ -315,7 +315,7 @@ def render_search_stock_view(data, search_symbol):
                     </style>
                 """, unsafe_allow_html=True)
                 
-                st.markdown("### 📊 High Points Timeline")
+                # st.markdown("### 📊 High Points Timeline")
                 
                 # Modern container for the search table
                 st.markdown("""

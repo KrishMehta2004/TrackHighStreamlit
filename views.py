@@ -64,31 +64,9 @@ def render_specific_date_view(filtered_data, date_display, sort_option):
 def render_search_stock_view(data, search_symbol):
     """Render the search stock view with modern futuristic styling"""
     if search_symbol:
-        # Title with stock symbol and current metrics
-        st.markdown(f"""
-            <div style='background-color: rgba(17, 24, 39, 0.7); padding: 20px; border-radius: 10px; margin-bottom: 25px'>
-                <h2 style='margin: 0; color: #00FFFF'>{search_symbol} Analysis</h2>
-            </div>
-        """, unsafe_allow_html=True)
         
         high_dates = data
         if not data.height == 0:
-            # Key metrics in a clean layout
-            # highest_price = data['ltp'].max()
-            # metrics_container = st.container()
-            # with metrics_container:
-            #     col1, col2, col3 = st.columns(3)
-            #     with col1:
-            #         st.metric(
-            #             "52-Week High",
-            #             format_number(highest_price),
-            #             delta=None
-            #         )
-            #     with col3:
-            #         st.metric(
-            #             "High Points Found",
-            #             f"{len(high_dates)} dates" if not high_dates.is_empty() else "0"
-            #         )
                     
             # High points table with enhanced styling
             if not high_dates.is_empty():
@@ -225,6 +203,7 @@ def render_search_stock_view(data, search_symbol):
                         /* Date styling for search table */
                         .date-badge {
                             background: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 100%);
+                            background: linear-gradient(90deg,#0e7490 0%,#1e3a8a 50%,#4338ca 100%);
                             color: white;
                             padding: 10px 16px;
                             border-radius: 12px;
@@ -363,9 +342,9 @@ def render_search_stock_view(data, search_symbol):
                             
                         if change_value is not None and not pl.DataFrame({'x': [change_value]})['x'].is_null().item():
                             if change_value > 0:
-                                change_html = f'<span class="change-positive-search">📈 +{change_value:.2f}%</span>'
+                                change_html = f'<span class="change-positive-search"> +{change_value:.2f}%</span>'
                             elif change_value < 0:
-                                change_html = f'<span class="change-negative-search">📉 {change_value:.2f}%</span>'
+                                change_html = f'<span class="change-negative-search"> {change_value:.2f}%</span>'
                             else:
                                 change_html = f'<span class="change-neutral-search">➖ {change_value:.2f}%</span>'
                         else:

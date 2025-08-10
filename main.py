@@ -302,5 +302,17 @@ def main():
         data = data.filter(pl.col("symbol") == search_symbol)
         render_search_stock_view(data, search_symbol)
 
+    # Footer: Created by DataInvestor with X (Twitter) link
+    st.markdown(
+        """
+        <hr style='margin-top: 2.5em; margin-bottom: 1em; border: 0; border-top: 1px solid #334155;'>
+        <div style='text-align: center; color: #A5B4FC; font-size: 1.1rem; margin-top: 1.5em;'>
+            Created by <strong>Krish Mehta</strong> &mdash; 
+            <a href='https://x.com/DataInvestor_' target='_blank' style='color: #60A5FA; text-decoration: none; font-weight: 600;'>@DataInvestor_</a>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
 if __name__ == "__main__":
     main()

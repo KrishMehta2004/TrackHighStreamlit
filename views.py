@@ -202,8 +202,7 @@ def render_search_stock_view(data, search_symbol):
                         
                         /* Date styling for search table */
                         .date-badge {
-                            background: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 100%);
-                            background: linear-gradient(90deg,#0e7490 0%,#1e3a8a 50%,#4338ca 100%);
+                            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%);
                             color: white;
                             padding: 10px 16px;
                             border-radius: 12px;
@@ -212,8 +211,8 @@ def render_search_stock_view(data, search_symbol):
                             display: inline-flex;
                             align-items: center;
                             gap: 8px;
-                            box-shadow: 0 4px 12px rgba(14, 165, 233, 0.4);
-                            border: 1px solid rgba(14, 165, 233, 0.6);
+                            box-shadow: 0 4px 1px rgba(14, 165, 233, 0.4);
+                            border: 0.2px solid rgba(14, 165, 233, 0.6);
                             min-width: 140px;
                             justify-content: center;
                         }
@@ -234,7 +233,7 @@ def render_search_stock_view(data, search_symbol):
                         
                         /* Change styling for search table */
                         .change-positive-search {
-                            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+                            background: linear-gradient(135deg, #34d399 0%, #059669 100%);
                             color: white;
                             padding: 10px 16px;
                             border-radius: 12px;
@@ -250,7 +249,7 @@ def render_search_stock_view(data, search_symbol):
                         }
                         
                         .change-negative-search {
-                            background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+                            background: linear-gradient(135deg, #f87171 0%, #ef4444 100%);
                             color: white;
                             padding: 10px 16px;
                             border-radius: 12px;
@@ -465,7 +464,7 @@ def render_month_view(filtered_data, date_display, sort_option):
                 
                 /* Table header */
                 .futuristic-table thead th {
-                    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+                    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);    
                     color: #f1f5f9;
                     font-weight: 600;
                     padding: 20px 20px;
@@ -581,7 +580,7 @@ def render_month_view(filtered_data, date_display, sort_option):
                 
                 /* Returns styling */
                 .returns-positive {
-                    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+                    background: linear-gradient(135deg, #34d399 0%, #059669 100%);
                     color: white;
                     padding: 10px 16px;
                     border-radius: 12px;
@@ -595,7 +594,7 @@ def render_month_view(filtered_data, date_display, sort_option):
                 }
                 
                 .returns-negative {
-                    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+                    background: linear-gradient(135deg, #f87171 0%, #ef4444 100%);
                     color: white;
                     padding: 10px 16px;
                     border-radius: 12px;
@@ -975,7 +974,7 @@ def render_date_range_view(filtered_data, date_display, sort_option):
                 
                 /* Returns styling */
                 .returns-positive {
-                    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+                    background: linear-gradient(135deg, #34d399 0%, #059669 100%);
                     color: white;
                     padding: 10px 16px;
                     border-radius: 12px;
@@ -989,7 +988,7 @@ def render_date_range_view(filtered_data, date_display, sort_option):
                 }
                 
                 .returns-negative {
-                    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+                    background: linear-gradient(135deg, #f87171 0%, #ef4444 100%);
                     color: white;
                     padding: 10px 16px;
                     border-radius: 12px;

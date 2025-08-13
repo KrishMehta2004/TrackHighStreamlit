@@ -19,12 +19,6 @@
 
 ---
 
-## 📸 Screenshots
-
-> _Add screenshots or GIFs of your dashboard here for maximum impact!_
-
----
-
 ## 🛠️ Tech Stack
 
 - **Frontend/UI:** [Streamlit](https://streamlit.io/)
